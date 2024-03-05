@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+/* ----my=classes---*/
+.my-h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1e1e1e;
+}
+.my-p {
+  font-size: 0.9375rem;
+  position: relative;
+}
+
+.my-p::after {
+  content: "";
+  background-color: #3c6efd;
+  width: 2.5rem;
+  height: 0.25rem;
+  position: absolute;
+  top: 2.1875rem;
+  left: 48%;
+}
+
+.my-w-10 {
+  width: 10%;
+}
+.my-shadow {
+  box-shadow: 0 0.8125rem 0.5rem -0.625rem rgba(139, 139, 139, 0.377);
+}
+
+.my-icon {
+  color: rgb(0, 0, 0);
+  transition: 0.5s all;
+}
+
+.cus-ico {
+  color: #3c6efd;
+}
+/* ------WIDTH---SKILL-BAR----- */
+.w-85 {
+  width: 85%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+/* ------------VARIBALE-------------- */
+
+:root {
+  --main-color: #3c6efd;
+}
+
+/*-----------------------------------*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+}
+.navbar .my-font {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.navbar .collapse .navbar-nav .nav-item a {
+  padding-inline: 16px;
+}
+nav ul li a::after {
+  display: block;
+  content: "";
+  border-bottom: 2px solid white !important;
+  transform: scale(0);
+  transition: 0.5s all;
+  transform-origin: 0% 100%;
+}
+nav ul li a:hover::after {
+  transform: scaleX(0.9);
+}
+
+nav .navbar-nav .active::after {
+  display: block;
+  content: "";
+  border-bottom: 2px solid white !important;
+  transform: scaleX(0.9);
+  transform-origin: 0% 100%;
+}
+
+/* --------------END--NAV----------- */
+
+#home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527) 0% 100%),
+    url("../img/hero-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#home .container .caption h1 {
+  font-size: 72px;
+  margin-bottom: 0.625rem;
+}
+
+/* -------------END--HOME------------ */
+
+#about .about-data .data-item li {
+  color: RGB(78, 78, 78);
+  letter-spacing: 0.0625rem;
+}
+
+#about .about-intro h3 {
+  position: relative;
+}
+
+#about .about-intro h3::after {
+  content: "";
+  background-color: var(--main-color);
+  width: 6.25rem;
+  height: 0.1875rem;
+  position: absolute;
+  top: 120%;
+  left: 0;
+}
+
+/* ---------END SEC.ABOUT--------- */
+
+/* ----------START-SERVICES--------- */
+
+#services .icones-h {
+  background-color: transparent;
+  width: 7.5rem;
+  height: 7.5rem;
+  border: 0.625rem solid var(--main-color);
+  transition: 0.5s all;
+}
+
+#services .extention:hover .my-icon {
+  color: white;
+}
+
+#services .extention:hover .icones-h {
+  background-color: var(--main-color);
+  border: 0.625rem solid rgb(194, 205, 240);
+}
+
+/* -------------END-SERVICES---------- */
+/* -------------START-SECTION-COUNTER------ */
+
+.section-counter {
+  background-image: linear-gradient(rgba(58, 116, 224, 0.801) 0% 100%),
+    url("../img/counters-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.section-counter .counter-all .counter-ico {
+  width: 4.6875rem;
+  height: 4.6875rem;
+  border: 0.5rem solid #cde1f8;
+}
+
+/* -------------END-SECTION-COUNTER------ */
+
+/* -------------START--PORTFOLIO---------- */
+
+#portfolio .web {
+  font-size: 0.875rem;
+}
+#portfolio .web span {
+  color: var(--main-color);
+}
+
+#portfolio .my-card-exc img {
+  transition: 1s all;
+}
+
+#portfolio .my-card-exc:hover img {
+  transform: scale(1.3);
+}
+
+/*-------------END=PORTFOLIO--------------  */
+
+/*-------------START=SECTION-TWO-----------  */
+
+.section-counter-two {
+  background-image: linear-gradient(rgba(58, 116, 224, 0.685) 0% 100%),
+    url("../img/overlay-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.section-counter-two p {
+  position: relative;
+}
+
+.section-counter-two p::after {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  width: 1.25rem;
+  height: 0.625rem;
+  position: absolute;
+  top: 150%;
+  left: 48%;
+  border-radius: 3.125rem;
+}
+
+/*--------------END=SECTION-------------*/
+/*-------------START=BLOG-------------*/
+
+#blog a.exc-color {
+  color: black;
+  transition: 0.5s all;
+}
+
+#blog a.exc-color:hover {
+  color: var(--main-color);
+}
+
+.my-text {
+  font-size: 0.625rem;
+}
+
+/*-------------END=BLOG-------- */
+/*-------------START=USER-----------*/
+
+#user {
+  background-image: linear-gradient(rgba(58, 116, 224, 0.685) 0% 100%),
+    url("../img/overlay-bg.jpg");
+}
+
+#user h3.my-line {
+  position: relative;
+}
+
+#user h3.my-line::after {
+  content: "";
+  background-color: var(--main-color);
+  width: 20%;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+#user textarea {
+  resize: vertical;
+}
+
+#user .btr {
+  width: fit-content;
+  margin: auto;
+}
+
+#user .btr button {
+  padding: 10px 22px;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  font-weight: light;
+  text-transform: capitalize;
+  transition: 0.3s all;
+}
+
+#user .btr button:hover {
+  background-color: #5984fa;
+  box-shadow: 0 0 0 4px rgba(98, 135, 236, 0.286);
+}
+
+/*----------part-two-------*/
+
+#user .social .my-hover {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 3px solid var(--main-color);
+  transition: 0.5s all;
+  cursor: pointer;
+}
+
+#user .social .my-hover:hover {
+  background-color: var(--main-color);
+  border: 3px solid rgb(194, 205, 240);
+}
+
+#user .social .my-hover:hover .my-icon {
+  color: white;
+}
+
+/*--------END=USER--------*/
+
+.finish {
+  background-color: #3362d2;
+
+  box-shadow: 0 0 6px #495575 inset;
+}
+
+.finish .end {
+  width: 20%;
+  margin: auto;
+}
+
+.finish .end p {
+  font-size: 13px;
+  color: white;
+}
+
+.back-to-top {
+  width: 1.875rem;
+  height: 1.875rem;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  left: 96%;
+}
